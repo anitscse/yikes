@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imran.yikes.smhome">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get complaints"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteY="127dp"
+        tools:layout_editor_absoluteX="121dp" />
+
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log out"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:layout_editor_absoluteY="32dp"
+        tools:layout_editor_absoluteX="280dp" />
+
+
+    <TableLayout
+        android:layout_width="365dp"
+        android:layout_height="206dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2"
+        android:background="#87ceeb"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="233dp">
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:ems="10"
+                android:hint="problem_id"
+                android:inputType="number" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:hint="Enter Phone"
+                android:inputType="phone"
+                android:textColor="@android:color/background_light" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="126dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/editText6"
+            android:layout_marginBottom="81dp"
+            android:text="attempt" />
+    </TableRow>
+</RelativeLayout>
